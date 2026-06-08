@@ -1,0 +1,21 @@
+<main class="app">
+  <div class="card">
+    <h1>Message Display</h1>
+
+    <div class="form-group">
+      <label for="message-input">Message to Display</label>
+      <input
+        id="message-input"
+        type="text"
+        [(ngModel)]="messageInput"
+        placeholder="Enter your message"
+      />
+    </div>
+
+    <button type="button" class="btn-primary" (click)="onDisplayMessage()">
+      Display Message
+    </button>
+
+    <h2 class="display">{{ displayMessage }}</h2>
+  </div>
+</main>
